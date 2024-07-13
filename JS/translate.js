@@ -2,7 +2,7 @@ const translations = {};
 
 async function loadTranslations(lang) {
     try {
-        const response = await fetch(`../locales/${lang}.json`);
+        const response = await fetch(`https://vimlesh-mishra.github.io/your-repo-name/locales/${encodeURIComponent(lang)}.json`);
         if (!response.ok) {
             throw new Error(`Could not load ${lang}.json: ${response.statusText}`);
         }
