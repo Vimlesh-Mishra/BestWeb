@@ -33,8 +33,11 @@
         </div>
       </div>
       <div id="lang-btn">
-        <button onclick="setLanguage('en')">English</button>
-      <button onclick="setLanguage('मराठी')">मराठी</button>
+        <select onchange="setLanguage(this.value)">
+          <option value="en">English</option>
+          <option value="मराठी">मराठी</option>
+          <option value="हिंदी">हिंदी</option>
+        </select>
       </div>
       <div class="toggle-button">☰</div>
     </nav>

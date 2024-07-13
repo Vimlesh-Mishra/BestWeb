@@ -42,16 +42,19 @@ body {
   align-items: center;
 }
 
-#lang-btn button {
+#lang-btn select {
   border: none;
   background-color: white;
   border-radius: 5px;
-  padding: 0.3rem;
+  padding: 0.5rem;
 }
 
-#lang-btn button:hover {
-  scale: 1.00012;
-  color: red;
+#lang-btn select:focus {
+  outline: none;
+}
+
+#lang-btn {
+  margin-right: 1rem;
 }
 
 svg {
@@ -720,7 +723,7 @@ footer p {
     width: 100%;
     background-color: white;
     z-index: 3;
-    background: linear-gradient(to right, white, white);
+    background: linear-gradient(to right, white, red);
     /* Ensure it appears above other elements */
   }
 
@@ -730,14 +733,14 @@ footer p {
 
   #lang-btn {
     position: absolute;
-    width: fit-content;
     right: 3rem;
   }
 
-  #lang-btn button {
+  #lang-btn select {
     border: 1px solid red;
-    padding: 2px;
+    padding: 0.5rem;
     font-size: smaller;
+    padding-right: 0.5rem;
   }
 
   .sticky {
