@@ -723,7 +723,7 @@ footer p {
     width: 100%;
     background-color: white;
     z-index: 3;
-    background: linear-gradient(to right, white, red);
+    background: linear-gradient(to right, white 60%, red);
     /* Ensure it appears above other elements */
   }
 
